@@ -1,0 +1,10 @@
+.header{
+    height: 6.4rem;
+    padding: 0 0.8rem 0 2rem;
+    box-shadow: 0 2px 5px 0 var(--nav-shadow), 0 2px 10px 0 var(--nav-shadow); 
+}
+
+.brand-name{
+    color: var(--input-border-hover);
+    font-family: var(--brand-font);
+}

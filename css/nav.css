@@ -8,3 +8,10 @@
     color: var(--input-border-hover);
     font-family: var(--brand-font);
 }
+
+.link-active{
+    background: var(--link-active);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

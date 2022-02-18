@@ -17,7 +17,7 @@
     height: 6.8rem;
     grid-template-columns: auto 25rem 15rem 20rem;
     margin: 1rem 0;
-    background-color: #ccccff75;
+    background-color: var(--home-card);
 }
 
 .btn-link:hover > .no-hover{

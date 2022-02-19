@@ -3,17 +3,33 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 @import url(nav.css);
 @import url(home.css);
+@import url(add.css);
 
 :root{
     --nav-shadow:#e1d6f4;
-    --chip-bg: #9da8e9;
-    --chip-color:#f69696;
+
     --primary-colour: #b7b7f8;
     --input-box:#00000047;
+
     --btn-color: #8989e3;
     --btn-hover: #a1a1e2;
-    --home-card:#ccccff75;
+
     --main-bg:#ccccff42;
+
+    --chip-bg: #9da8e9;
+    --chip-color:#f69696;  
+
+    --btn-color: #8989e3;
+    --btn-hover: #a1a1e2;
+
+    --modal-dialog:#ededfffa;
+
+    --home-card:#ccccff75;    
+
+    --delete-btn:#f65353eb;
+    --delete-btn-hover:#f3505091;
+
+    --link-active: linear-gradient(to right, #CCCCFF 0%, #5A4FCF 33%, #6F00FF 100%);
 
     --brand-font: 'Handlee', cursive;
 }

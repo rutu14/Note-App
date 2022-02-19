@@ -14,7 +14,7 @@
         </a>
         <div class="nav-items">
             <nav>
-                <a href="/pages/add.html" class="btn-link td" role="button"><i class="bi bi-pen"></i>Add</a>                 
+                <a href="/pages/add.html" class="btn-link td link-active" role="button"><i class="bi bi-pen"></i>Add</a>                 
                 <a href="/pages/update.html" class="btn-link td" role="button"><i class="bi bi-cloud-upload"></i>Update</a>
                 <a href="/pages/delete.html" class="btn-link td" role="button"><i class="bi bi-trash3"></i>Delete</a>
             </nav>
@@ -23,8 +23,59 @@
             </div>
         </div>
     </header>
-    <main class="main-container">
-        
+    <main class="main-container add-container">
+        <form class="add-form">            
+            <label for="title-input" class="text3 light">Title</label>
+            <input id="title-input" class="text-input add-input m-t10" type="text"/>
+             
+            <section class="m-t20">
+                <label for="text-input" class="text3 light">Tags</label>
+                <button data-open="tag-create" class="icon-button tag-btn"><i class="bi bi-plus"></i></button> 
+                <div class="chip-display">
+                    <span class="chip cn">Exam2</span>   
+                </div>
+            </section>
+            <label for="content-input" class="text3 light m-t20">Content</label>  
+            <textarea id="content-input" class="text-input add-input m-t10 content-input" type="text"></textarea>
+
+            <button class="btn btn-primary text-uppercase add-form-btn" type="submit">Add Note</button>                                   
+        </form>
+
+        <div class="modal-backdrop" id="tag-create">
+            <div class="modal-dialog tag-box">
+                <button class="btn close-modal cp modal-btn-close" data-close="tag-create">✕</button>
+                <form>
+                <section class="modal-content">
+                    <h3 class="heading2 regular text-center">Create Tag</h3>
+                    <section class="modal-section">
+                        <label for="modal-title-input" class="text3 light">Title</label>
+                        <input id="modal-title-input" class="text-input add-input m-t10" type="text" />
+                    </section>
+                    <section class="modal-section modal-section-2 m-t10">
+                        <label class="text3 light">Select Colour</label>
+                        <section class="color-inputs">
+                            <section class="color-names">
+                                <input id="radio1" type="radio" class="radiobtn" name="radio" value="1" checked>
+                                <label for="radio1">Default</label><div class="color-display"></div>
+                            </section>
+                            <section class="color-names">
+                                <input id="radio1" type="radio" class="radiobtn" name="radio" value="2">
+                                <label for="radio1">Color 1</label><div class="color-display chip-color1"></div>
+                            </section> 
+                            <section class="color-names">
+                                <input id="radio1" type="radio" class="radiobtn" name="radio" value="3">
+                                <label for="radio1">Color 2</label><div class="color-display chip-color2"></div>
+                            </section>  
+                        </section>
+                    </section> 
+                    <section class="modal-section-btn">
+                        <button class="btn btn-primary text-uppercase modal-btn" type="submit">Create</button> 
+                    </section>                                                                                                  
+                </section> 
+                </form>
+            </div>
+        </div>
     </main>
+    <script src="/js/modal.js"></script> 
 </body>
 </html>

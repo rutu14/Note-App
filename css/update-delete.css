@@ -1,0 +1,34 @@
+.page-detail{
+    padding: 4rem 6rem 2rem;
+}
+
+.action-card{
+    grid-template-columns: auto 15rem 20rem 15rem;
+}
+
+.action-card-center{
+    align-self: center;
+}
+
+.delete-btn{
+    background: var(--delete-btn);
+    font-size: 2.5rem;
+    border-radius: 4px;
+    margin: 0 5px;
+}
+
+.delete-btn:hover{
+    color: var(--tertiary-colour);
+    background: var(--delete-btn-hover);
+}
+
+.update-btn{
+    background-color: var(--btn-color);
+    font-size: 2.5rem;
+    border-radius: 4px;
+    margin: 0 5px;
+}
+
+.update-btn:hover{
+    color: var(--tertiary-colour);
+}

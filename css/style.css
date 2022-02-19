@@ -4,11 +4,12 @@
 @import url(nav.css);
 @import url(home.css);
 @import url(add.css);
+@import url(update-delete.css);
 
 :root{
     --nav-shadow:#e1d6f4;
 
-    --primary-colour: #b7b7f8;
+    --primary-colour: #9b9bfe;
     --input-box:#00000047;
 
     --btn-color: #8989e3;
@@ -29,7 +30,7 @@
     --delete-btn:#f65353eb;
     --delete-btn-hover:#f3505091;
 
-    --link-active: linear-gradient(to right, #CCCCFF 0%, #5A4FCF 33%, #6F00FF 100%);
+    --link-active: linear-gradient(to right, #3a3af6 0%, #5A4FCF 33%, #6F00FF 100%);
 
     --brand-font: 'Handlee', cursive;
 }

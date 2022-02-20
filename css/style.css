@@ -5,6 +5,7 @@
 @import url(home.css);
 @import url(add.css);
 @import url(update-delete.css);
+@import url(view.css);
 
 :root{
     --nav-shadow:#e1d6f4;
@@ -31,6 +32,11 @@
     --delete-btn-hover:#f3505091;
 
     --link-active: linear-gradient(to right, #3a3af6 0%, #5A4FCF 33%, #6F00FF 100%);
+
+    --view-shadow:#00000026;
+    --view-bg: #39c16c26;
+    --info-section-bg:#ced3ef;
+    --tool-btn: #171618ad;
 
     --brand-font: 'Handlee', cursive;
 }

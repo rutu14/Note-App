@@ -74,3 +74,11 @@
     margin: 3rem auto;
     background: var(--view-bg);
 }
+
+@media only screen and (max-width: 600px) {
+    .view-tool-action{
+        background-color: var(--disabled-inner);
+        height: 11rem;
+        align-items: center;
+    }
+}

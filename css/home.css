@@ -49,3 +49,21 @@
     overflow-x: clip;
     white-space: nowrap;
 }
+
+@media only screen and (max-width: 768px) {
+    .home-card {
+        grid-template-columns: auto 15rem 10rem 10rem;
+        gap: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .home-card{
+        grid-template-columns: auto;
+    }
+
+    .no-hover{
+       display: none;
+    }
+}
+

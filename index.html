@@ -4,14 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="assests/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assests/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assests/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assests/favicon/site.webmanifest">
     <link rel="stylesheet" href="/css/style.css">
-    <title>Note Taking</title>
+    <title>Doodles - Note Taking</title>
 </head>
 <body>
     <header class="nav-header header"> 
-        <a href="index.html" class="btn-link td">
-            <h1 class="heading3 medium brand-name">Doodles</h1>
-        </a>     
+        <div class="mobile-nav">
+            <input type="checkbox" />
+            <span></span><span></span><span></span>
+            <ul class="menu-nav"> 
+                <li class="no-list">
+                    <a href="/pages/add.html" class="btn-link td nav-link" role="button">
+                        <i class="bi bi-pen"></i>Add
+                    </a>
+                </li>
+                <li class="no-list">
+                    <a href="/pages/update-delete.html" class="btn-link td nav-link" role="button">
+                        <i class="bi bi-cloud-upload"></i>Update /
+                        <i class="bi bi-trash3"></i>Delete
+                    </a>
+                </li>
+                <li class="no-list"> 
+                </li>
+                <li class="no-list"> 
+                    <a href="login.html" class="btn-link cp td text-center nav-link m-t10" role="button">
+                            Logout
+                    </a>   
+                </li>               
+            </ul>
+       </div>  
+        <div class="header-logo nav-title">
+            <a href="index.html" class="btn-link td">
+                <h1 class="heading3 medium brand-name">Doodles</h1>
+            </a> 
+        </div>
+        <div class="avatar avatar-text text-md mobile-avatar">RL</div>
         <div class="nav-items">
             <nav>
                 <a href="/pages/add.html" class="btn-link td" role="button"><i class="bi bi-pen"></i>Add</a>                 
@@ -22,6 +53,11 @@
             </nav>
             <div class="account-links">  
                 <button id="drop-btn" class="avatar avatar-text text-md cp">RL</button>
+                <div id="dropdown" class="dropdown-intial">
+                    <a href="login.html" class="btn-link cp td text-center m-t10" role="button">
+                        Logout
+                    </a>
+                </div>
             </div>
         </div>
     </header>
@@ -44,7 +80,7 @@
                 <div class="card-cols tag-section no-hover text-center">
                     <h4 class="text4 medium display-inlineblock">-</h4>         
                 </div>
-                <div class="card-cols no-hover">
+                <div class="card-cols no-hover tag-section">
                     <h4 class="text4 text-center regular display-inlineblock cn">16th Feb 2022</h4>                        
                 </div>
             </a>     
@@ -62,7 +98,7 @@
                 <div class="card-cols tag-section no-hover">
                     <h4 class="text4 regular display-inlineblock" title="Physics-Energy">Physics-Energy</h4>         
                 </div>
-                <div class="card-cols no-hover">
+                <div class="card-cols no-hover tag-section">
                     <h4 class="text4 text-center regular display-inlineblock cn">16th Feb 2022</h4>                        
                 </div>
             </a>     
@@ -80,7 +116,7 @@
                 <div class="card-cols tag-section no-hover">
                     <h4 class="text4 regular display-inlineblock" title="Physics-Energy">Physics-Energy</h4>         
                 </div>
-                <div class="card-cols no-hover">
+                <div class="card-cols no-hover tag-section">
                     <h4 class="text4 text-center regular display-inlineblock cn">16th Feb 2022</h4>                        
                 </div>
             </a>     
@@ -98,7 +134,7 @@
                 <div class="card-cols tag-section no-hover">
                     <h4 class="text4 regular display-inlineblock" title="Physics-Energy">Physics-Energy</h4>         
                 </div>
-                <div class="card-cols no-hover">
+                <div class="card-cols no-hover tag-section">
                     <h4 class="text4 text-center regular display-inlineblock cn">16th Feb 2022</h4>                        
                 </div>
             </a>   
@@ -116,7 +152,7 @@
                 <div class="card-cols tag-section no-hover">
                     <h4 class="text4 regular display-inlineblock" title="Physics-Energy">Physics-Energy</h4>         
                 </div>
-                <div class="card-cols no-hover">
+                <div class="card-cols no-hover tag-section">
                     <h4 class="text4 text-center regular display-inlineblock cn">16th Feb 2022</h4>                        
                 </div>
             </a>  
@@ -134,7 +170,7 @@
                 <div class="card-cols tag-section no-hover">
                     <h4 class="text4 regular display-inlineblock" title="Physics-Energy">Physics-Energy</h4>         
                 </div>
-                <div class="card-cols no-hover">
+                <div class="card-cols no-hover tag-section">
                     <h4 class="text4 text-center regular display-inlineblock cn">16th Feb 2022</h4>                        
                 </div>
             </a>  
@@ -152,7 +188,7 @@
                 <div class="card-cols tag-section no-hover">
                     <h4 class="text4 regular display-inlineblock" title="Physics-Energy">Physics-Energy</h4>         
                 </div>
-                <div class="card-cols no-hover">
+                <div class="card-cols no-hover tag-section">
                     <h4 class="text4 text-center regular display-inlineblock cn">16th Feb 2022</h4>                        
                 </div>
             </a>  
@@ -170,7 +206,7 @@
                 <div class="card-cols tag-section no-hover">
                     <h4 class="text4 regular display-inlineblock" title="Physics-Energy">Physics-Energy</h4>         
                 </div>
-                <div class="card-cols no-hover">
+                <div class="card-cols no-hover tag-section">
                     <h4 class="text4 text-center regular display-inlineblock cn">16th Feb 2022</h4>                        
                 </div>
             </a>  
@@ -188,11 +224,12 @@
                 <div class="card-cols tag-section no-hover">
                     <h4 class="text4 regular display-inlineblock" title="Physics-Energy">Physics-Energy</h4>         
                 </div>
-                <div class="card-cols no-hover">
+                <div class="card-cols no-hover tag-section">
                     <h4 class="text4 text-center regular display-inlineblock cn">16th Feb 2022</h4>                        
                 </div>
             </a>  
         </section>
     </main>
+    <script src="js/nav.js"></script>   
 </body>
 </html>

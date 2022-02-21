@@ -32,3 +32,15 @@
 .update-btn:hover{
     color: var(--tertiary-colour);
 }
+
+@media only screen and (max-width: 600px) {
+    .action-card {
+        grid-template-columns: auto 15rem;
+    }
+
+    .mobile-removal{
+        display: none;
+        align-self: unset;
+        padding: unset;
+    }
+}

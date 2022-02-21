@@ -29,11 +29,6 @@
                     </a>
                 </li>
                 <li class="no-list"> 
-                </li>
-                <li class="no-list"> 
-                    <a href="login.html" class="btn-link cp td text-center nav-link m-t10" role="button">
-                            Logout
-                    </a>   
                 </li>               
             </ul>
        </div>  
@@ -42,7 +37,7 @@
                 <h1 class="heading3 medium brand-name">Doodles</h1>
             </a> 
         </div>
-        <div class="avatar avatar-text text-md mobile-avatar">RL</div>
+        <button class="btn btn-primary outline login-sign text-uppercase mobile-avatar" type="button">Login</button> 
         <div class="nav-items">
             <nav>
                 <a href="/pages/add.html" class="btn-link td" role="button"><i class="bi bi-pen"></i>Add</a>                 
@@ -52,17 +47,33 @@
                 </a>
             </nav>
             <div class="account-links">  
-                <button id="drop-btn" class="avatar avatar-text text-md cp">RL</button>
-                <div id="dropdown" class="dropdown-intial">
-                    <a href="login.html" class="btn-link cp td text-center m-t10" role="button">
-                        Logout
-                    </a>
-                </div>
+                <button class="btn btn-primary outline login-sign text-uppercase" type="button">Login</button> 
             </div>
         </div>
     </header>
     <main class="main-container">
-        <h1 class="text1 medium text-center">Coming Soon </h1>
+        <section class="login-container">
+            <h1 class="heading2 medium">Login to your account</h1>
+            <article class="login-box m-t30">
+                <form class="inner-login-box">
+
+                    <label for="username-input" class="text4">Username</label>
+                    <input id="username-input" class="text-input login-input" type="text"/>
+
+                    <label for="password-input" class="text4 m-t20">Password</label>
+                    <input id="password-input" class="text-input login-input" type="password"/>
+
+                    <div class="helper m-t10">
+                        <a class="btn-link td text-helpers" role="button">Forgot Password?</a>
+                    </div>                    
+
+                    <button class="btn btn-primary login-btn m-t10" type="button">Sign In</button>  
+
+                    <a href="register.html" class="btn-link td text-center m-t10" role="button">Register Now</a>
+
+                </form>                
+            </article>
+        </section>
     </main>
     <script src="/js/view.js"></script> 
     <script src="/js/nav.js"></script> 
